@@ -10,14 +10,14 @@ public:
 	}
 
 	void addElement(int element) {
-		if (localSize == size) throw std::exception("Невозможно добавить новый элемент, т.к. массив заполнен");
+		if (localSize == size) throw std::exception("РќРµРІРѕР·РјРѕР¶РЅРѕ РґРѕР±Р°РІРёС‚СЊ РЅРѕРІС‹Р№ СЌР»РµРјРµРЅС‚, С‚.Рє. РјР°СЃСЃРёРІ Р·Р°РїРѕР»РЅРµРЅ");
 		arr[localSize] = element;
 		localSize++;
 	}
 
 	int getElement(int num) {
-		if (num < 0 || num > size-1) throw std::exception("Номер элемента вне диапазона массива");
-		if (num > localSize-1) throw std::exception("Элемент массива не определен");
+		if (num < 0 || num > size-1) throw std::exception("РќРѕРјРµСЂ СЌР»РµРјРµРЅС‚Р° РІРЅРµ РґРёР°РїР°Р·РѕРЅР° РјР°СЃСЃРёРІР°");
+		if (num > localSize-1) throw std::exception("Р­Р»РµРјРµРЅС‚ РјР°СЃСЃРёРІР° РЅРµ РѕРїСЂРµРґРµР»РµРЅ");
 		return arr[num];
 	}
 
