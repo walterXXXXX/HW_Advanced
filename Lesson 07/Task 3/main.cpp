@@ -35,7 +35,7 @@ public:
 	}
 
 	int size() { return _size; }
-	int capacity() { reutrn _capacity; }
+	int capacity() { return _capacity; }
 
 	void print_vector() {
 		for (int i = 0; i < _size; i++)
